@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.lnk.spring.boot.mybatis.mapper.IdCardMapper">
+	<resultMap id="BaseResultMap" type="net.lnk.spring.boot.mybatis.model.IdCardEntity">
+		<id column="id" jdbcType="BIGINT" property="id" />
+		<result column="name" jdbcType="VARCHAR" property="name" />
+		<result column="id_no" jdbcType="CHAR" property="idNo" />
+		<result column="gender" jdbcType="INTEGER" property="gender" />
+		<result column="birthday" jdbcType="TIMESTAMP" property="birthday" />
+		<result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+	</resultMap>
+</mapper>
